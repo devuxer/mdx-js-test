@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@jackwilsdon/craco-use-babelrc": "^1.0.0",
     "@mdx-js/loader": "^1.5.1",
     "@mdx-js/mdx": "^1.5.1",
     "@testing-library/jest-dom": "^4.2.4",
