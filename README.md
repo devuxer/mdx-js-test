@@ -47,7 +47,7 @@ Steps to create your own project:
    ```
    # Hello, MDX!
 
-   This is an example using webpack
+   This is an example using Create React App + craco
    ```
 
 6. `./.babelrc`:
@@ -72,4 +72,4 @@ You should see:
 
 > # Hello, MDX!
 >
-> This is an exmaple using webpack
+> This is an exmaple using Create React App + craco
