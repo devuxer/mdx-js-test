@@ -5,8 +5,12 @@ Steps to create your own project:
 1. `npx create-react-app mdx-js-test` (replace `mdx-js-test` with your project's name)
 2. `npm install @mdx-js/loader @mdx-js/mdx craco @jackwilsdon/craco-use-babelrc`
 3. `./craco.config.js`:
+
    ```
-   module.exports = {
+    const BabelRcPlugin = require("@jackwilsdon/craco-use-babelrc");
+
+    module.exports = {
+     plugins: [{ plugin: BabelRcPlugin }],
      webpack: {
        configure: webpackConfig => {
          const oneOfRules = webpackConfig.module.rules.find(x => !!x.oneOf).oneOf;
@@ -20,6 +24,7 @@ Steps to create your own project:
      }
    };
    ```
+
 4. `./src/index.js`:
 
    ```
